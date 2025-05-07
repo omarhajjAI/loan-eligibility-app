@@ -1,0 +1,90 @@
+/* app/static/style.css */
+
+/* 1) Page & Container */
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f7fa;
+    font-family: 'Poppins', sans-serif;
+  }
+  form {
+    background: #ffffff;
+    padding: 40px; /* was 32px, now more breathing room */
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    width: 100%;
+    max-width: 800px;    /* was 600px, now wider */
+    box-sizing: border-box;
+  }
+  
+  /* 2) Headings */
+  h1 {
+    text-align: center;
+    margin-bottom: 8px;
+    font-size: 1.75rem;
+    color: #4a69f2;
+  }
+  form p.description {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 24px;
+    color: #666;
+    font-size: 0.95rem;
+  }
+  
+  /* 3) Form Layout */
+  form label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 500;
+    color: #333;
+  }
+  form select,
+  form input[type="number"] {
+    width: 100%;
+    padding: 14px 16px;  /* a little more inside space */
+    font-size: 1rem;
+    line-height: 1.4;
+    border: 1px solid #dde2ea;
+    border-radius: 8px;
+    background: #fafbfc;
+    box-sizing: border-box;
+    margin-bottom: 20px;  /* extra vertical gap */
+  }
+  form .row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;             /* was 16px, now more breathing room */
+  }
+  form .row-full {
+    grid-column: span 2;
+  }
+  
+  /* 4) Button */
+  form button {
+    width: 100%;
+    padding: 16px;         /* was 14px */
+    font-size: 1rem;
+    background-color: #4a69f2;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 12px;      /* was 8px */
+  }
+  form button:hover {
+    background-color: #3b52c3;
+  }
+  
+  /* 5) Result Text */
+  h2 {
+    margin-top: 28px;      /* a bit more space before result */
+    text-align: center;
+    font-size: 1.25rem;
+    color: #333;
+  }
+  
